@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+    background-color: deepskyblue;
+    border: 1px solid black;
+    margin: 5rem auto;
+    text-align: center;
+    animation-name: color , text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: center center;
+
+
+}
+
+@keyframes color {
+   from {
+       font-size: 1.5rem;
+       width: 20vw;
+       height: 20vh;
+       background-color: deepskyblue;
+       transform: rotate(10deg)  scale(0.75, 0.75);
+    }
+
+    to {
+        font-size: 3rem;
+        width: 20vw;
+        height: 20vh;
+        background-color: blue;
+        transform: rotate(30deg)  scale(1.25, 1.25);
+    }
+}
+
+#container2 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid blue;
+    background-color: lightpink;
+    animation-name: lr;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 25rem;
+    animation-direction: alternate;
+}
+
+@keyframes lr {
+    from {
+        left: 0;
+    }
+
+    to {
+       left: 80vw;
+    }
+}
